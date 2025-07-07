@@ -27,9 +27,20 @@ A deep learning project to classify thermal images into categories like **Car**,
 
 ---
 
-## 🚀 How to Run
+###
+Model Architecture
+Base: EfficientNetB0 (pretrained on ImageNet)
+Top Layers:
+  - GlobalAveragePooling2D
+  - Dropout (0.3)
+  - Dense layer with softmax (3 classes)
+Callbacks:
+  - EarlyStopping (patience=3)
+  - ReduceLROnPlateau (patience=2)
+  - ModelCheckpoint (best model saved)
 
- 
+
+## 🚀 How to Run
 
 ```bash
 1. Clone the Repository
@@ -52,15 +63,4 @@ data/Thermal Image Dataset/val/
 ```bash
 python train_model.py
 
-###
-Model Architecture
-Base: EfficientNetB0 (pretrained on ImageNet)
-Top Layers:
-  - GlobalAveragePooling2D
-  - Dropout (0.3)
-  - Dense layer with softmax (3 classes)
-Callbacks:
-  - EarlyStopping (patience=3)
-  - ReduceLROnPlateau (patience=2)
-  - ModelCheckpoint (best model saved)
 
