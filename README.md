@@ -29,24 +29,25 @@ A deep learning project to classify thermal images into categories like **Car**,
 
 ## 🚀 How to Run
 
-###  1. Clone the Repository
+ 
 
 ```bash
+1. Clone the Repository
 git clone https://github.com/your-username/thermal-object-classification.git
 cd thermal-object-classification
 
-### 2. Install Dependencies
+2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 
-### 3. Prepare the Dataset
+3. Prepare the Dataset
 
 ```bash
 data/Thermal Image Dataset/train/
 data/Thermal Image Dataset/val/
 
-### 4. Train the Model
+4. Train the Model
 
 ```bash
 python train_model.py
