@@ -40,7 +40,7 @@ Callbacks:
   - ModelCheckpoint (best model saved)
 
 
-## 🚀 How to Run
+## How to Run
 
 1. **Clone the Repository**
 
