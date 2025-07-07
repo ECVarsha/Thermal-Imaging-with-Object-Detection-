@@ -42,21 +42,41 @@ Callbacks:
 
 ## 🚀 How to Run
 
-1. Clone the Repository
-git clone https://github.com/your-username/thermal-object-classification.git
-cd thermal-object-classification
+1. **Clone the Repository**
 
-2. Install Dependencies
+    ```bash
+    git clone https://github.com/your-username/thermal-object-classification.git
+    cd thermal-object-classification
+    ```
 
-pip install -r requirements.txt
+2. **Install Dependencies**
 
-3. Prepare the Dataset
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-data/Thermal Image Dataset/train/
-data/Thermal Image Dataset/val/
+3. **Prepare the Dataset**
 
-4. Train the Model
+    Download and place the dataset in the following structure:
 
-python train_model.py
+    ```
+    data/
+    └── Thermal Image Dataset/
+        ├── train/
+        │   ├── Car/
+        │   ├── Cat/
+        │   └── Man/
+        └── val/
+            ├── Car/
+            ├── Cat/
+            └── Man/
+    ```
+
+4. **Train the Model**
+
+    ```bash
+    python train_model.py
+    ```
+
 
 
